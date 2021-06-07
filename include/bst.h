@@ -5,7 +5,6 @@
 template < typename T >
 class BST {
  public:
- 
   struct Node {
   T value;
   int c;
@@ -23,6 +22,7 @@ int depth() {
 int search(T value) {
   return searchNode(root, value);
 }
+
  private:
 Node* root;
 Node* addNode(Node* root, T value) {
